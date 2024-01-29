@@ -1,0 +1,89 @@
+body {
+    font-family: Verdana, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: gray;
+    main {
+        display: flex;
+        gap: 1em;
+        flex-flow: wrap;
+
+        article {
+            display: flex;
+            flex-flow: column;
+            // justify-content: center;
+            align-items: center;
+            gap: 1em;
+            
+            border-radius: 5em;
+            padding: 2em;
+            background-color: white;
+            width: 25em;
+            min-width: 25em;
+
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
+                h1 {
+                    margin: 0;
+                    font-size: 1.5em;
+                    color: #111;
+                    border-radius: 1em;
+                    padding: 0.2em 0.5em;
+                    background-color: #eeeeee;
+                }
+                h2 {
+                    margin: 0;
+                    font-size: 2em;
+                    // font-weight: bold;
+                }
+            }
+            
+            section {
+                display: flex;
+                gap: 2em;
+                p {
+                    margin: 0;
+                    background-color: red;
+                    padding: 0.2em 0.5em;
+                    border-radius: 1em;
+                    font-weight: bold;
+                }
+            }
+
+            .id-back {
+                position: absolute;
+                z-index: 0;
+                margin: 0;
+                font-size: 7em;
+                font-weight: bold;
+                color: #eeeeee;
+            }
+            img {
+                z-index: 1;
+
+                width: 15em;
+            }
+
+        }
+    }
+}
+
+.Fire {background-color: #ffa939; color: #111}
+.Grass {background-color: #30d165; color: #111}
+.Poison {background-color: #9644b6; color: #fff}
+.Normal {background-color: #9b8c6d; color: #111}
+.Water {background-color: #007add; color: #fff}
+.Electric {background-color: #eeff00; color: #111}
+.Ice {background-color: #6ae1ff; color: #111}
+.Fighting {background-color: #c93d3d; color: #fff}
+.Ground {background-color: #dbd386; color: #111}
+.Flying {background-color: #b294e9; color: #111}
+.Psychic {background-color: #f09191; color: #111}
+.Bug {background-color: #c4dd67; color: #111}
+.Rock {background-color: #bb8261; color: #111}
+.Ghost {background-color: #7b5194; color: #fff}
+.Dark {background-color: #464b00; color: #fff}
+.Dragon {background-color: #530097; color: #fff}
+.Steel {background-color: #c2c2c2; color: #111}
+.Fairy {background-color: #ffccf0; color: #111}
