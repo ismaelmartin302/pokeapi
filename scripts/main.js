@@ -9,12 +9,12 @@ for (let i = 1; i <= 151; i++) {
 }
 
 function mostrarPokemon(poke) {
-        let id = poke.id.toString().padStart(4, "0");
-        let nombre = poke.name.charAt(0).toUpperCase() + poke.name.slice(1);
-        let imagen = poke.sprites.other["official-artwork"].front_default;
-        let tipos = poke.types;
+    let id = poke.id.toString().padStart(4, "0");
+    let nombre = poke.name.charAt(0).toUpperCase() + poke.name.slice(1);
+    let imagen = poke.sprites.other["official-artwork"].front_default;
+    let tipos = poke.types;
 
-        if (pokemonID === "" || pokemonID == poke.id) {
+    if (pokemonID === "" || pokemonID == poke.id) {
         list.innerHTML += `
                 <article>
                     <img src="${imagen}" alt="${nombre}" loading="lazy">
