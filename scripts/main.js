@@ -9,7 +9,7 @@ for (let i = 1; i <= 151; i++) {
 }
 
 function mostrarPokemon(poke) {
-    
+
     if (pokemonID == "") {
         let id = poke.id.toString().padStart(4, "0");
         let nombre = poke.name.charAt(0).toUpperCase() + poke.name.slice(1);

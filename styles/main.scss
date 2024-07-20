@@ -38,7 +38,7 @@ body {
         article {
             display: flex;
             flex-flow: column;
-            // justify-content: center;
+            justify-content: space-between;
             align-items: center;
             gap: 1em;
             
@@ -47,7 +47,7 @@ body {
             background-color: white;
             width: 25em;
             min-width: 25em;
-
+            height: 24em;
             header {
                 display: flex;
                 justify-content: center;

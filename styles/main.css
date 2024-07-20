@@ -37,6 +37,7 @@ body main {
 body main article {
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
   align-items: center;
   gap: 1em;
   border-radius: 5em;
@@ -44,6 +45,7 @@ body main article {
   background-color: white;
   width: 25em;
   min-width: 25em;
+  height: 24em;
 }
 body main article header {
   display: flex;
