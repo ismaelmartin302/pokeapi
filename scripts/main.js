@@ -43,17 +43,19 @@ function buscar(event) {
         input.value = "";
 
         if (valor) {
-            pokemonID = valor;
-            list.innerHTML = "";  // Limpiar la lista antes de mostrar el resultado de la búsqueda
-            fetch(origin + valor)
-                .then((response) => {
-                    if (!response.ok) {
-                        throw new Error('Pokémon no encontrado');
-                    }
-                    return response.json();
-                })
-                .then(poke => mostrarPokemon(poke))
-                .catch(error => alert(error.message));
+            if (!isNaN(valor)) {
+                pokemonID = valor;
+                list.innerHTML = "";  // Limpiar la lista antes de mostrar el resultado de la búsqueda
+                fetch(origin + valor)
+                    .then((response) => {
+                        if (!response.ok) {
+                            // throw new Error('Pokémon no encontrado');
+                        }
+                        return response.json();
+                    })
+                    .then(poke => mostrarPokemon(poke))
+                    .catch(error => alert(error.message));
+            }
         }
     }
 }
