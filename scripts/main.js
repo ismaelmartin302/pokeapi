@@ -43,13 +43,13 @@ function buscar(event) {
         input.value = "";
 
         if (valor) {
-            if (!isNaN(valor)) {
-                pokemonID = valor;
-                list.innerHTML = "";  // Limpiar la lista antes de mostrar el resultado de la búsqueda
-                fetch(origin + valor)
-                    .then((response) => {
-                        if (!response.ok) {
-                            list.innerHTML += `
+            // if (!isNaN(valor)) {
+            pokemonID = valor;
+            list.innerHTML = "";  // Limpiar la lista antes de mostrar el resultado de la búsqueda
+            fetch(origin + valor)
+                .then((response) => {
+                    if (!response.ok) {
+                        list.innerHTML += `
                             <article>
                                 <img src="https://wiki.p-insurgence.com/images/0/09/722.png" alt="Pokemon Not Found" loading="lazy">
                                 <p class="id-back">#????</p>
@@ -60,12 +60,12 @@ function buscar(event) {
                                 </section>
                             </article>
                         `;
-                        }
-                        return response.json();
-                    })
-                    .then(poke => mostrarPokemon(poke))
-                    .catch(error => alert(error.message));
-            }
+                    }
+                    return response.json();
+                })
+                .then(poke => mostrarPokemon(poke))
+                .catch(error => alert(error.message));
+            // }
         }
     }
 }
