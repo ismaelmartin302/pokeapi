@@ -51,7 +51,7 @@ function buscar(event) {
                         if (!response.ok) {
                             list.innerHTML += `
                             <article>
-                                <img src="https://wiki.p-insurgence.com/images/0/09/722.png" alt="" loading="lazy">
+                                <img src="https://wiki.p-insurgence.com/images/0/09/722.png" alt="Pokemon Not Found" loading="lazy">
                                 <p class="id-back">#????</p>
                                 <header>
                                     <h1>#????</h1>
