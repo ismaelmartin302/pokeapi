@@ -49,7 +49,17 @@ function buscar(event) {
                 fetch(origin + valor)
                     .then((response) => {
                         if (!response.ok) {
-                            // throw new Error('Pokémon no encontrado');
+                            list.innerHTML += `
+                            <article>
+                                <img src="https://wiki.p-insurgence.com/images/0/09/722.png" alt="" loading="lazy">
+                                <p class="id-back">#????</p>
+                                <header>
+                                    <h1>#????</h1>
+                                    <h2>Missing No</h2>
+                                </header>
+                                </section>
+                            </article>
+                        `;
                         }
                         return response.json();
                     })
